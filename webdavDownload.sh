@@ -37,12 +37,3 @@ EOF
 
 #connect webdav
 cadaver https://dav.jianguoyun.com/dav/bc/DownloadVPS/ < $fileAddress/webdavSetup.txt
-
-
-
-
-
-
-
-
-
