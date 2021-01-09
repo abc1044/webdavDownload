@@ -2,8 +2,9 @@
 Automatically download files and upload to webdav network disk.
 
 # 基本功能
+利用vps下载文件，并自动上传到webdav网盘，利用webdav设置的自动同步功能，下载回本地电脑。
 - 1、判断是否存在cadaver服务
-- 2、下载文件到vps，download_bc
+- 2、下载文件到vps的指定目录
 - 3、上传文件到指定目录，自动bye退出
 
 # 使用方法
