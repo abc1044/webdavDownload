@@ -8,9 +8,11 @@ Automatically download files and upload to webdav network disk.
 - 3、上传文件到指定目录，自动bye退出
 
 # 使用方法
-- 权限：chmod +x ./webdavDownload.sh
-- 使用：./webdavDownload.sh 链接
-- 示例：./webdavDownload.sh https://wiztreefree.com/files/wiztree_3_35_setup.exe
+```shell
+chmod +x ./webdavDownload.sh #给权限
+./webdavDownload.sh 链接 #使用
+#./webdavDownload.sh https://wiztreefree.com/files/wiztree_3_35_setup.exe #示例
+```
 
 # 提前配置的内容
 - 1、在坚果云开启webdav，获取密钥
