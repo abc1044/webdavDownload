@@ -14,16 +14,31 @@ chmod +x ./webdavDownload.sh #给权限
 #./webdavDownload.sh https://wiztreefree.com/files/wiztree_3_35_setup.exe #示例
 ```
 
-# 提前配置的内容
-- 1、在坚果云开启webdav，获取密钥
-- 2、在vps根目录下新建.netrc文件
-内容为：
+# 配置方法
+- 1、下载项目，并编辑脚本中对应的路径
+```shell
+git clone https://github.com/abc1044/webdavDownload.git
+cd webdavDownload/webdavDownload.sh
+```
+- 2、安装cadaver服务
+```shell
+apt install -y cadaver
+```
+- 3、配置webdav登陆密钥，在根目录下新建.netrc文件，内容为：
 ```shell
 machine dav.jianguoyun.com
 login 账号
 password 密钥
 ```
-- 3、在脚本中修改对应的文件夹位置
+- 4、给脚本权限
+```shell
+chmod +x ./webdavDownload.sh
+```
+- 5、配置完成，可以正常使用了。使用方法：脚本+链接即可
+```shell
+./webdavDownload.sh 链接
+#./webdavDownload.sh https://wiztreefree.com/files/wiztree_3_35_setup.exe #示例
+```
 
 # 待办
 - bug：上传的时候是按时间排序的，文件可能会传错
