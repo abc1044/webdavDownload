@@ -15,10 +15,11 @@ chmod +x ./webdavDownload.sh #给权限
 ```
 
 # 配置方法
-- 1、下载项目，并编辑脚本中对应的路径
+- 1、下载脚本webdavDownload.sh，并编辑脚本中对应的路径
 ```shell
-git clone https://github.com/abc1044/webdavDownload.git
-cd webdavDownload/webdavDownload.sh
+git clone https://github.com/abc1044/webdavDownload.git #clone项目
+mv ./webdavDownload/webdavDownload.sh webdavDownload.sh #移动脚本到根目录
+nano webdavDownload.sh #编辑配置，自定义文件路径
 ```
 - 2、安装cadaver服务
 ```shell
