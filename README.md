@@ -31,6 +31,8 @@ machine dav.jianguoyun.com
 login 账号
 password 密钥
 ```
+> 关于坚果云开启WebDAV、获取密钥等方法，请参考：<https://help.jianguoyun.com/?p=2064>
+
 - 4、给脚本权限
 ```shell
 chmod +x ./webdavDownload.sh
