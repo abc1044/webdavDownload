@@ -1,13 +1,13 @@
 #!/bin/bash
 cd
-#test download file exist?
+#test cadaver service exist?
 if ! [ -x "$(command -v cadaver)" ]; then
   echo 'Error: cadaver no found,please try:apt install -y cadaver' >&2
   exit 1
 fi
 
 #set fileAddress
-fileAddress=download_bc
+fileAddress=download_bc # <---Set download address
 if [ ! -d $fileAddress ];then
  mkdir $fileAddress
 fi
@@ -36,4 +36,4 @@ bye
 EOF
 
 #connect webdav
-cadaver https://dav.jianguoyun.com/dav/bc/DownloadVPS/ < $fileAddress/webdavSetup.txt
+cadaver https://dav.jianguoyun.com/dav/bc/DownloadVPS/ < $fileAddress/webdavSetup.txt  #<---Set upload address
